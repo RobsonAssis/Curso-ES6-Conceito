@@ -7,6 +7,10 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 // REST
+//A sintaxe de rest parameter (parâmetros rest)  nos permite representar um número indefinido de argumentos como um array.
+//Se o último argumento nomeado de uma função tiver prefixo com  ..., 
+//ele irá se tornar um array em que os elemento de 0 (inclusive) até theArgs.length (exclusivo) 
+//são disponibilizados pelos argumentos atuais passados à função
 var arr = [1, 2, 3, 4];
 var a = arr[0],
     b = arr[1],
@@ -14,6 +18,9 @@ var a = arr[0],
 console.log(a);
 console.log(b);
 console.log(c); // SPREAD
+//A sintaxe de propagação (Spread) permite que um objeto iterável, como um array ou string, 
+//seja expandida em locais onde zero ou mais argumentos (para chamadas de função) ou elementos (para literais de array) sejam esperados
+// ou uma expressão de objeto seja expandida em locais onde zero ou mais pares de chave-valor (para literais de objeto) são esperados.
 
 var arr1 = [1, 2, 3];
 var arr2 = [4, 5, 6];
@@ -30,6 +37,9 @@ var usuario2 = _objectSpread({}, usuario1, {
 });
 
 console.log(usuario2); //Template Literals
+//Template literals são literais string que permitem expressões embutidas. 
+//Você pode usar string multi-linhas e interpolação de string com elas. 
+//Elas eram chamadas "template strings" nas versões anteriores à especificação ES2015.
 
 var nome = "Robson";
 var altura = 1.90;
@@ -43,6 +53,10 @@ var usuario = {
   empresa: 'Rocketseat'
 };
 console.log(usuario); //Arrow Functions
+//Uma expressão arrow function possui uma sintaxe mais curta quando comparada a uma expressão de função (function expression)
+// e não tem seu próprio this, arguments, super ou new.target.
+// Estas expressões de funções são melhor aplicadas para funções que não sejam métodos, 
+//e elas não podem ser usadas como construtoras (constructors).
 
 var arr4 = [1, 3, 4, 5, 6];
 var newArr = arr4.map(function (item) {
