@@ -11,5 +11,8 @@
   },
   "scripts": {
     "dev": "babel ./main.js -o ./bundle.js -w"
+  },
+  "devDependencies": {
+    "babel-loader": "8.0.0-beta.0"
   }
 }
