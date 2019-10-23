@@ -94,6 +94,9 @@ Uma função assíncrona pode conter uma expressão await,
 que pausa a execução da função assíncrona e espera pela resolução da Promise passada, 
 e depois retoma a execução da função assíncrona e retorna o valor resolvido.
 
+Promise é um objeto usado para processamento assíncrono. Um Promise (de "promessa") 
+representa um valor que pode estar disponível agora, no futuro ou nunca.
+
 Dependencias yarn package.json
 "@babel/plugin-transform-async-to-generator": "^7.5.0",
 "@babel/polyfill": "^7.6.0",
